@@ -1,0 +1,51 @@
+/* ---------- Footer :) ---------- */
+footer {
+    margin: 0;
+    padding: 10% 10% 4% 10%;
+    background-color: rgba(203, 203, 203, 0.228);
+    gap: 50px;
+    line-height: 1.5;
+    justify-content: space-evenly;
+  }
+  
+  address {
+    font-family: serif;
+    font-style: normal;
+    color: #305770;
+    margin-bottom: 30px;
+  }
+  
+  footer a {
+    font-family: serif;
+    font-size: 1rem;
+    color: #305770;
+  }
+  
+  footer a:hover {
+    font-family: serif;
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  #flinks {
+    margin-bottom: 30px;
+  }
+  #fsome {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+  }
+  #flinks a {
+    max-width: 9%;
+  }
+  
+  hr {
+    color: #305770;
+  }
+  
+  @media (min-width: 800px) {
+    footer {
+      display: flex;
+      padding: 4% 10% 4% 10%;
+    }
+  }
