@@ -1,11 +1,12 @@
 /* ---------- Footer :) ---------- */
 footer {
     margin: 0;
-    padding: 10% 0% 4% 0%;
+    padding: 10% 10% 4% 10%;
     background-color: #0086A8;
     gap: 50px;
     line-height: 1.5;
     justify-content: space-between;
+    grid-area: 1/1;
   }
   
   address {
@@ -32,11 +33,12 @@ footer {
   }
   #flinks {
     margin-bottom: 30px;
+
   }
   #fsome {
     display: flex;
     gap: 10px;
-    justify-content: end;
+    justify-content: start;
   }
   #flinks a {
     max-width: 9%;
@@ -50,7 +52,20 @@ footer {
       width: 20px;
       height: 20px;
   }
+  /* #footer_logo{
+      display: none;
+  } */
   
+  #grid_logo{
+    display: grid;
+}
+#footer_logo{
+    display: block;
+    grid-area: 1/1;
+    place-self: end end;
+    padding: 0 10% 3% 0;
+    width: 6rem;
+}
   @media (min-width: 800px) {
     footer {
       display: flex;
@@ -64,7 +79,18 @@ footer {
     #fhr{
     width: 35%;    
     }
+
+    #footer_logo{
+        width: 8rem;
+    }
+    
+    #fsome {
+        justify-content: end;
+      }
+
   }
+  
+
 
 
   /* Skrifttyper */
