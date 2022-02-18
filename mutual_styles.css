@@ -5,7 +5,7 @@ footer {
     background-color: #0086A8;
     gap: 50px;
     line-height: 1.5;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   
   address {
@@ -54,7 +54,15 @@ footer {
   @media (min-width: 800px) {
     footer {
       display: flex;
-      padding: 4% 0% 4% 0%;
+      padding: 4% 10% 4% 10%;
+    }
+
+    #sej_flex{
+        display: flex;
+        gap: 35%;
+    }
+    #fhr{
+    width: 35%;    
     }
   }
 
