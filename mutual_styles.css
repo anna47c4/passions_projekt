@@ -1,0 +1,112 @@
+/* ---------- Footer :) ---------- */
+footer {
+    margin: 0;
+    padding: 10% 10% 4% 10%;
+    background-color: #0086A8;
+    gap: 50px;
+    line-height: 1.5;
+    justify-content: space-between;
+    grid-area: 1/1;
+  }
+  
+  address {
+    font-style: normal;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  footer a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+  }
+
+  footer p{
+      color: white;
+      margin: 0;
+  }
+  
+  footer a:hover {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+  }
+  #flinks {
+    margin-bottom: 30px;
+
+  }
+  #fsome {
+    display: flex;
+    gap: 10px;
+    justify-content: start;
+  }
+  #flinks a {
+    max-width: 9%;
+  }
+  
+  hr {
+    color: white;
+  }
+
+  footer img{
+      width: 20px;
+      height: 20px;
+  }
+  /* #footer_logo{
+      display: none;
+  } */
+  
+  #grid_logo{
+    display: grid;
+}
+#footer_logo{
+    display: block;
+    grid-area: 1/1;
+    place-self: end end;
+    padding: 0 10% 3% 0;
+    width: 6rem;
+}
+  @media (min-width: 800px) {
+    footer {
+      display: flex;
+      padding: 4% 10% 4% 10%;
+    }
+
+    #sej_flex{
+        display: flex;
+        gap: 35%;
+    }
+    #fhr{
+    width: 35%;    
+    }
+
+    #footer_logo{
+        width: 8rem;
+    }
+    
+    #fsome {
+        justify-content: end;
+      }
+
+  }
+  
+
+
+
+  /* Skrifttyper */
+
+  p{
+    font-family: 'Raleway', sans-serif;
+  }
+  address{
+    font-family: 'Raleway', sans-serif;
+  }
+  a{
+    font-family: 'Raleway', sans-serif;
+  }
+  h5{
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+    color: white;
+    font-size: 1.3;
+  }
