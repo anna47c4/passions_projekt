@@ -12,7 +12,8 @@ img {
 
 h1 {
   font-family: "Comfortaa", cursive;
-  font-size: 1.5rem;
+  color: #0086a8;
+  font-size: 1.6rem;
   margin-left: 1rem;
   grid-row: 2/5;
 }
@@ -20,8 +21,26 @@ h1 {
 h2 {
   font-family: "Comfortaa", cursive;
   font-size: 1.3rem;
-  margin-bottom: 1rem;
   margin-top: 2rem;
+}
+
+h3 {
+  font-family: "Comfortaa", cursive;
+  color: #0086a8;
+}
+
+p {
+  position: absolute;
+  right: 50px;
+  top: 400px;
+  width: 140px;
+  height: 140px;
+  background-color: #f97900;
+  border-radius: 50%;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
 }
 
 #first_section {
@@ -30,7 +49,6 @@ h2 {
   background-image: url(billeder/splashbillede_forside.jpg);
   background-size: cover;
   place-content: top;
-  background-repeat: none;
   width: 100vw;
   height: 80vh;
   background-position: 52%;
@@ -38,7 +56,7 @@ h2 {
 
 #second_section {
   display: grid;
-  margin: 1rem;
+  /* margin: 2rem; */
   gap: 2rem;
 }
 
@@ -46,10 +64,101 @@ h2 {
   border-radius: 0.5rem;
 }
 
+#second_section h3 {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background-color: hsla(0, 5%, 96%, 0.911);
+  border-radius: 0.5rem;
+  padding: 0.6rem;
+}
+
+.container1 {
+  background-image: url(billeder/inspirationsbillede_thailand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  /* text-align: bottom left; */
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+.container2 {
+  background-image: url(billeder/inspirationsbillede_grækenland.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  /* text-align: bottom left; */
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
+.container3 {
+  background-image: url(billeder/inspirationsbillede_budapest.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+  /* text-align: bottom left; */
+  color: rgb(0, 0, 0);
+  border-radius: 1rem;
+}
+
 @media (min-width: 800px) {
   h1 {
     font-family: "Comfortaa", cursive;
     font-size: 2.5rem;
-    margin-left: 1.5rem;
+    margin-left: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    right: 150px;
+    top: 360px;
+    width: 200px;
+    height: 200px;
+    font-size: 2.2rem;
+  }
+
+  /* #second_section {
+    margin: 2rem;
+  } */
+
+  .container1,
+  .container2 {
+    background-position: center;
+  }
+
+  .container3 {
+    background-position: bottom;
+  }
+
+  #second_section h3 {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: hsla(0, 5%, 96%, 0.911);
+    border-radius: 0.5rem;
+    padding: 0.6rem;
+  }
+
+  #second_section h3 {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: hsla(0, 5%, 96%, 0.911);
+    border-radius: 0.5rem;
+    padding: 1.2rem;
+  }
+
+  #second_section {
+    gap: 3rem;
   }
 }
