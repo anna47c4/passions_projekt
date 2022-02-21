@@ -1,6 +1,6 @@
 //indledningsvis defineres to konstanter, nemlig url og key, som skal bruges til at fetche vores data
 const url = "https://passionsprojekt-6310.restdb.io/rest/rejser";
-const key = "3673ffb994a729cfa64e95352137fea3f841a ";
+const key = "6212710334fd621565858859";
 
 //her definerer vi konstanten options, og sætter den sammen med vores key, de to skal bruges i den næste function
 const options = {
@@ -26,7 +26,7 @@ function vis(json) {
     const klon = temp.cloneNode(true).content;
     klon.querySelector("h3").textContent = destination.type;
     klon.querySelector(".land").textContent = destination.land;
-    klon.querySelector("img").src = "billeder/" + destination.billede;
+    klon.querySelector("img").src = "billeder/" + destination.billede1;
 
     container.appendChild(klon);
   });
