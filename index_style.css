@@ -59,6 +59,7 @@ p {
   display: grid;
   margin: 1rem;
   gap: 2rem;
+  margin-bottom: 3rem;
 }
 
 #second_section img {
@@ -108,6 +109,19 @@ p {
   border-radius: 1rem;
 }
 
+.container1:hover,
+.container2:hover,
+.container3:hover {
+  cursor: pointer;
+  filter: opacity(0.8);
+}
+
+.container1,
+.container2,
+.container3 {
+  transition: 0.5s;
+}
+
 @media (min-width: 800px) {
   h1 {
     font-family: "Comfortaa", cursive;
@@ -130,6 +144,7 @@ p {
 
   #second_section {
     margin: 2rem;
+    margin-bottom: 4rem;
   }
 
   .container1,
