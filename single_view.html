@@ -11,26 +11,87 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="mutual_styles.css" />
   </head>
   <body>
-    <div class="single_splash">
-      <img class="splash_img" src="" alt="" />
-    </div>
-    <article class="destination">
-      <div id="left_column">
-        <h1></h1>
-        <div class="p">
-          <p class="beskrivelse"></p>
-          <div class="knap"><button>Tilbage</button></div>
+    <header>
+      <a href="index.html" id="header_logo"
+        ><img src="oplev_logo/oplev_color.svg" alt="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li id="forside_li"><a href="index.html">Forside</a></li>
+          <li><a href="liste.html">Udforsk</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="single_splash">
+        <img class="splash_img" src="" alt="" />
+      </div>
+      <article class="destination">
+        <div id="left_column">
+          <h1></h1>
+          <div class="p">
+            <p class="beskrivelse"></p>
+            <div class="knap"><button>Tilbage</button></div>
+          </div>
         </div>
-      </div>
 
-      <div id="right_column">
-        <img class="article_img1" src="" alt="" />
-        <img class="article_img2" src="" alt="" />
-        <img class="article_img3" src="" alt="" />
-      </div>
-    </article>
+        <div id="right_column">
+          <img class="article_img1" src="" alt="" />
+          <img class="article_img2" src="" alt="" />
+          <img class="article_img3" src="" alt="" />
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer herunder -->
+    <div id="grid_logo">
+      <footer>
+        <div id="sej_flex">
+          <div id="fkontakt">
+            <address>
+              <hr />
+              <br />
+              <h5>Kontaktinformation:</h5>
+              Oplev.dk <br />
+              +45 12 34 56 78 <br />
+              <a href="mailto:hej@oplev.dk" class="email">hej@oplev.dk</a><br />
+              Oplevvej 55 <br />
+              1234 Lemvig
+            </address>
+          </div>
+          <div id="flinks">
+            <hr />
+            <br />
+            <h5>Links:</h5>
+            <a href="">Kundeservice</a> <br />
+            <a href="">Vigtigt info</a> <br />
+            <a href="">Ferietips</a> <br />
+            <a href="">Presse</a> <br />
+            <a href="">Job</a>
+          </div>
+        </div>
+        <div id="fhr">
+          <hr />
+          <br />
+          <div id="fsome">
+            <a href="https://www.facebook.com" class=""
+              ><img src="some/facebook1.svg" alt="" class="" />
+            </a>
+            <a href="https://www.instagram.com" class=""
+              ><img src="some/instagram1.svg" alt="" class="" />
+            </a>
+            <a href="https://www.linkedin.com/"
+              ><img src="some/linkedin1.svg" alt="" class="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <img id="footer_logo" src="oplev_logo/oplev_white.svg" alt="logo" />
+    </div>
 
     <style>
       * {
@@ -38,7 +99,7 @@
         padding: 0;
         box-sizing: border-box;
       }
-      img {
+      main img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -129,6 +190,7 @@
         }
       }
     </style>
+    <script src="header.js"></script>
 
     <script>
       //her overfører vi url-parameteret fra url-strengen og over i en variabel vi kan bruge, nemlig id, som skal bruges til at lave en singlepage for hver destination

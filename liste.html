@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Raleway:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="mutual_styles.css" />
   </head>
   <body>
     <header>
@@ -25,32 +26,33 @@
         </ul>
       </nav>
     </header>
-    <div class="liste_splash">
-      <h1>Find din destination</h1>
-    </div>
+    <main>
+      <div class="liste_splash">
+        <h1>Find din destination</h1>
+      </div>
 
-    <h2>Alle</h2>
-    <div class="knapper">
-      <button data-type="alle" class="valgt">Alle</button>
-      <button data-type="Charterferie">Charterferie</button>
-      <button data-type="Skiferie">Skiferie</button>
-      <button data-type="Krydstogt">Krydstogt</button>
-      <button data-type="Storbysferie">Storbyferie</button>
-    </div>
+      <h2>Alle</h2>
+      <div class="knapper">
+        <button data-type="alle" class="valgt">Alle</button>
+        <button data-type="Charterferie">Charterferie</button>
+        <button data-type="Skiferie">Skiferie</button>
+        <button data-type="Krydstogt">Krydstogt</button>
+        <button data-type="Storbysferie">Storbyferie</button>
+      </div>
 
-    <section class="data-container"></section>
-    <template>
-      <article class="destination">
-        <div class="box"><img src="" alt="" /></div>
-        <h3></h3>
-        <div class="info">
-          <p class="type"></p>
-          <p class="region"></p>
-          <p class="by"></p>
-        </div>
-      </article>
-    </template>
-
+      <section class="data-container"></section>
+      <template>
+        <article class="destination">
+          <div class="box"><img src="" alt="" /></div>
+          <h3></h3>
+          <div class="info">
+            <p class="type"></p>
+            <p class="region"></p>
+            <p class="by"></p>
+          </div>
+        </article>
+      </template>
+    </main>
     <!-- Footer herunder -->
     <div id="grid_logo">
       <footer>
@@ -96,7 +98,6 @@
       </footer>
       <img id="footer_logo" src="oplev_logo/oplev_white.svg" alt="logo" />
     </div>
-    <script src="header.js"></script>
 
     <style>
       /* stjerneregel der fjerner default margin, så det ikke konflikter**/
@@ -107,7 +108,7 @@
       }
 
       /* basis indstilling for billederne, så de fylder 100% af deres container*/
-      img {
+      main img {
         width: 100%;
         height: 100%;
         /*outline: 2px solid #0fc6f5;*/

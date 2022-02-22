@@ -2,7 +2,7 @@
 //bagefter har vi lavet en konstant med header, som vores overskrift skal bruges til
 const url = "https://passionsprojekt-6310.restdb.io/rest/rejser";
 const key = "6212710334fd621565858859";
-const header = document.querySelector("h2");
+const headline = document.querySelector("h2");
 
 //her definerer vi konstanten options, og sætter den sammen med vores key, de to skal bruges i den næste function
 const options = {
@@ -31,7 +31,7 @@ function filtrer() {
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
   vis();
-  header.textContent = this.textContent;
+  headline.textContent = this.textContent;
   console.log(this);
 }
 
@@ -72,4 +72,20 @@ function vis(json) {
 //til slut i ovenstående funktion gør vi artiklerne klikbare, og sender dem videre til nedestående funktion, som sender dem videre til en singleside
 function visDest(destination) {
   location.href = `single_view.html?id=${destination._id}`;
+}
+
+// til header scroll effekt
+
+const header = document.querySelector("header");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.toggle("scrolled");
+  }
 }
