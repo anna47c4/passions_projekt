@@ -13,6 +13,18 @@
     />
   </head>
   <body>
+    <header>
+      <a href="index.html" id="header_logo"
+        ><img src="oplev_logo/oplev_color.svg" alt="logo"
+      /></a>
+      <nav>
+        <ul>
+          <li id="forside_li"><a href="index.html">Forside</a></li>
+          <li><a href="liste.html">Udforsk</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="liste_splash">
       <h1>Find din destination</h1>
     </div>
@@ -39,6 +51,53 @@
       </article>
     </template>
 
+    <!-- Footer herunder -->
+    <div id="grid_logo">
+      <footer>
+        <div id="sej_flex">
+          <div id="fkontakt">
+            <address>
+              <hr />
+              <br />
+              <h5>Kontaktinformation:</h5>
+              Oplev.dk <br />
+              +45 12 34 56 78 <br />
+              <a href="mailto:hej@oplev.dk" class="email">hej@oplev.dk</a><br />
+              Oplevvej 55 <br />
+              1234 Lemvig
+            </address>
+          </div>
+          <div id="flinks">
+            <hr />
+            <br />
+            <h5>Links:</h5>
+            <a href="">Kundeservice</a> <br />
+            <a href="">Vigtigt info</a> <br />
+            <a href="">Ferietips</a> <br />
+            <a href="">Presse</a> <br />
+            <a href="">Job</a>
+          </div>
+        </div>
+        <div id="fhr">
+          <hr />
+          <br />
+          <div id="fsome">
+            <a href="https://www.facebook.com" class=""
+              ><img src="some/facebook1.svg" alt="" class="" />
+            </a>
+            <a href="https://www.instagram.com" class=""
+              ><img src="some/instagram1.svg" alt="" class="" />
+            </a>
+            <a href="https://www.linkedin.com/"
+              ><img src="some/linkedin1.svg" alt="" class="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <img id="footer_logo" src="oplev_logo/oplev_white.svg" alt="logo" />
+    </div>
+    <script src="header.js"></script>
+
     <style>
       /* stjerneregel der fjerner default margin, så det ikke konflikter**/
       * {
@@ -46,6 +105,7 @@
         padding: 0;
         box-sizing: border-box;
       }
+
       /* basis indstilling for billederne, så de fylder 100% af deres container*/
       img {
         width: 100%;
