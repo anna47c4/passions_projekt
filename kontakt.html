@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
     <link rel="stylesheet" href="mutual_styles.css" />
+    <link rel="stylesheet" href="kontakt_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,54 +27,35 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <<<<<<< HEAD
-        <header>
-          <div class="logo"></div>
-        </header>
-        <nav>
-          /*her indsættes de menu-punkter vi vil have, som IKKE er
-          dataknapperne, 'hjem', 'udforsk', 'kontakt'*/
-        </nav>
-        <div class="splash">/* her indsættes splash */</div>
-
-        <div class="text">
-          <h2>Lad os etablere kontakt!</h2>
-          <p>Udfyld blot formularen, og så bliver du kontaktet.</p>
-        </div>
-        =======
-        <h2>Lad os etablere kontakt!</h2>
-        <p>Udfyld blot formularen, og så bliver du kontaktet.</p>
-
-        >>>>>>> c4e6f95460a0e44cf67f346887754c9b88deb2c2
-
-        <form>
-          <div class="form-felt">
-            <label for="navn">Dit navn</label>
-            <input placeholder="fx Daniel Nielsen" type="text" />
-          </div>
-          <div class="form-felt">
-            <label for="mobilnummer">Mobilnummer</label>
-            <input placeholder="fx +45 29 77 45 62" type="tel" />
-          </div>
-
-          <div class="form-felt">
-            <label for="email">E-mail</label>
-            <input placeholder="fx dn@gmail.com" type="email" />
-          </div>
-
-          <div class="form-felt">
-            <label for="text">
-              Hvad drejer din henvendelse sig om?
-              <textarea name="besked" rows="5"></textarea>
-            </label>
-          </div>
-
-          <button>Indsend</button>
-        </form>
-      </section>
-    </main>
+      <div id="kontakt_splash">
+        <h1>Har du spørgsmål?</h1>
+      </div>
+      <main>
+        <section id="kontakt_section">
+          <h2>Kontakt os</h2>
+          <p>Udfyld blot formularen, og du bliver kontaktet.</p>
+          <form>
+            <div class="form-felt1">
+              <input placeholder="Navn" type="text" />
+            </div>
+            <div class="form-felt">
+              <input placeholder="Tlf." type="tel" />
+            </div>
+            <div class="form-felt">
+              <input placeholder="Email" type="email" />
+            </div>
+            <div class="form-felt">
+              <label for="text">
+                Hvad drejer din henvendelse sig om?
+                <textarea name="besked" rows="5"></textarea>
+              </label>
+            </div>
+            <button>Indsend</button>
+          </form>
+        </section>
+        <section id="kontakt_billede">
+        </section>
+      </main>
     <!-- Footer herunder -->
     <div id="grid_logo">
       <footer>
@@ -107,17 +89,21 @@
           <div id="fsome">
             <a href="https://www.facebook.com" class=""
               ><img src="some/facebook1.svg" alt="" class=""
-            /></a>
+            />
+            </a>
             <a href="https://www.instagram.com" class=""
               ><img src="some/instagram1.svg" alt="" class=""
-            /></a>
+            />
+            </a>
             <a href="https://www.linkedin.com/"
               ><img src="some/linkedin1.svg" alt="" class=""
-            /></a>
+            />
+            </a>
           </div>
         </div>
       </footer>
       <img id="footer_logo" src="oplev_logo/oplev_white.svg" alt="logo" />
     </div>
+    <script src="header.js"></script>
   </body>
 </html>
