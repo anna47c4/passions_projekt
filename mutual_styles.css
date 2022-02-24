@@ -12,7 +12,10 @@
     #minmax_grid{
         grid-column: 2/3;
     }
-
+    
+    #udforsk_li a{
+        color: #c25e00;
+      }
 /* ---------- Header :) ---------- */
 header{
     display: grid;
