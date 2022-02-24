@@ -63,10 +63,11 @@ h2 {
   background-size: cover;
   object-fit: cover;
   background-position: center center;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 800px) {
-  main {
+  #minmax_grid {
     display: grid;
     grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
   }

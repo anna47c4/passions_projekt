@@ -4,6 +4,15 @@
     padding: 0;
     }
 
+    main{
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+    }
+
+    #minmax_grid{
+        grid-column: 2/3;
+    }
+
 /* ---------- Header :) ---------- */
 header{
     display: grid;
