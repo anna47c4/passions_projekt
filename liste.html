@@ -26,6 +26,7 @@
         </ul>
       </nav>
     </header>
+<<<<<<< HEAD
     <main>
       <div class="liste_splash">
         <h1>Find din destination</h1>
@@ -53,6 +54,35 @@
         </article>
       </template>
     </main>
+=======
+    <div class="liste_splash">
+      <h1>Find din destination</h1>
+    </div>
+
+    <h2>Alle</h2>
+    <div class="knapper">
+      <button data-type="alle" class="valgt">Alle</button>
+      <button data-type="Charterferie">Charterferie</button>
+      <button data-type="Skiferie">Skiferie</button>
+      <button data-type="Krydstogt">Krydstogt</button>
+      <button data-type="Storbysferie">Storbyferie</button>
+    </div>
+    <!-- Herunder er den tomme data-container som vores indhold fra databasen skal klones ind i med appendChild til sidst -->
+    <section class="data-container"></section>
+    <!-- Herunder har vi den template / skabelon, som vi bruger til at indsætte vores ønskede indhold, for at klone det -->
+    <template>
+      <article class="destination">
+        <div class="box"><img src="" alt="" /></div>
+        <h3></h3>
+        <div class="info">
+          <p class="type"></p>
+          <p class="region"></p>
+          <p class="by"></p>
+        </div>
+      </article>
+    </template>
+
+>>>>>>> annas_branch
     <!-- Footer herunder -->
     <div id="grid_logo">
       <footer>
@@ -107,8 +137,12 @@
         box-sizing: border-box;
       }
 
+<<<<<<< HEAD
       /* basis indstilling for billederne, så de fylder 100% af deres container*/
       main img {
+=======
+      img {
+>>>>>>> annas_branch
         width: 100%;
         height: 100%;
         /*outline: 2px solid #0fc6f5;*/
@@ -140,7 +174,7 @@
           font-size: 2.5rem;
         }
       }
-
+      /* Herunder (section) laver vi et responsivt grid på listeviewet uden brug af mediaquery */
       section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -152,7 +186,7 @@
         margin: 5px;
         padding: 5px;
       }
-
+      /* Her benytter vi os af grid-area, for at ligge tekst ovenpå billede */
       .box,
       h3 {
         grid-area: 1/1;
