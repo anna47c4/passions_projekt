@@ -37,8 +37,9 @@
       <button data-type="Krydstogt">Krydstogt</button>
       <button data-type="Storbysferie">Storbyferie</button>
     </div>
-
+    <!-- Herunder er den tomme data-container som vores indhold fra databasen skal klones ind i med appendChild til sidst -->
     <section class="data-container"></section>
+    <!-- Herunder har vi den template / skabelon, som vi bruger til at indsætte vores ønskede indhold, for at klone det -->
     <template>
       <article class="destination">
         <div class="box"><img src="" alt="" /></div>
@@ -106,7 +107,6 @@
         box-sizing: border-box;
       }
 
-      /* basis indstilling for billederne, så de fylder 100% af deres container*/
       img {
         width: 100%;
         height: 100%;
@@ -139,7 +139,7 @@
           font-size: 2.5rem;
         }
       }
-
+      /* Herunder (section) laver vi et responsivt grid på listeviewet uden brug af mediaquery */
       section {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
@@ -151,7 +151,7 @@
         margin: 5px;
         padding: 5px;
       }
-
+      /* Her benytter vi os af grid-area, for at ligge tekst ovenpå billede */
       .box,
       h3 {
         grid-area: 1/1;
