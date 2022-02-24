@@ -7,6 +7,10 @@
   display: grid;
 }
 
+#kontakt_li a{
+    color: #c25e00;
+}
+
 h1 {
   place-self: center center;
   color: #0086a8;

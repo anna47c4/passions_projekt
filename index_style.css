@@ -31,6 +31,10 @@ h3 {
   color: #0086a8;
 }
 
+#forside_li a{
+  color: #c25e00;
+}
+
 #forside_knap {
   position: absolute;
   right: 50px;
@@ -42,6 +46,17 @@ h3 {
   padding: 1.5rem;
   text-align: center;
   font-size: 1.5rem;
+  display: grid;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#forside_knap:hover{
+transform: scale(120%);
+}
+
+#forside_knap a{
+  place-self: center;
 }
 
 a {

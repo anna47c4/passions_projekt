@@ -19,6 +19,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 2;
+    background-color: #ffffff77;
 }
 
 header:hover{
@@ -122,9 +123,9 @@ footer {
     margin-bottom: 10px;
 }
 
-#forside_li{
+/* #forside_li{
     display: none;
-}
+} */
   @media (min-width: 800px) {
 
     #forside_li{

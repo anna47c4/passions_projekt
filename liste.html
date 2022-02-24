@@ -21,7 +21,7 @@
       <nav>
         <ul>
           <li id="forside_li"><a href="index.html">Forside</a></li>
-          <li><a href="liste.html">Udforsk</a></li>
+          <li id="udforsk_li"><a href="liste.html">Udforsk</a></li>
           <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -107,6 +107,10 @@
         box-sizing: border-box;
       }
 
+      #udforsk_li a{
+        color: #c25e00;
+      }
+
       /* basis indstilling for billederne, så de fylder 100% af deres container*/
       main img {
         width: 100%;
@@ -187,7 +191,10 @@
 
       h3 {
         place-self: center center;
-        color: white;
+        color: #0086a8;
+        background-color: hsla(0, 5%, 96%, 0.911);
+        border-radius: 0.5rem;
+        padding: 0.6rem;
       }
 
       /* klasse der hører sig til data-knapperne, og som indikerer hvilken en man er på*/
