@@ -86,6 +86,6 @@ function scrollFunction() {
   if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 20) {
     header.classList.add("scrolled");
   } else {
-    header.classList.toggle("scrolled");
+    header.classList.remove("scrolled");
   }
 }
