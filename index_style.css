@@ -31,7 +31,7 @@ h3 {
   color: #0086a8;
 }
 
-#forside_li a{
+#forside_li a {
   color: #c25e00;
 }
 
@@ -51,11 +51,11 @@ h3 {
   transition: 0.2s;
 }
 
-#forside_knap:hover{
-transform: scale(120%);
+#forside_knap:hover {
+  transform: scale(120%);
 }
 
-#forside_knap a{
+#forside_knap a {
   place-self: center;
 }
 
@@ -69,7 +69,6 @@ a {
   grid-template-rows: repeat(5, 1fr);
   background-image: url(billeder/splashbillede_forside.jpg);
   background-size: cover;
-  place-content: top;
   width: 100vw;
   height: 80vh;
   background-position: 52%;

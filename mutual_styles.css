@@ -1,216 +1,213 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    main{
-        display: grid;
-        grid-template-columns: 1fr minmax(0, 1200px) 1fr;
-    }
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
 
-    #minmax_grid{
-        grid-column: 2/3;
-    }
-    
-    #udforsk_li a{
-        color: #c25e00;
-      }
+#minmax_grid {
+  grid-column: 2/3;
+}
+
+#udforsk_li a {
+  color: #c25e00;
+}
 /* ---------- Header :) ---------- */
-header{
-    display: grid;
-    justify-content: space-between;
-    padding: 15px 10px 5px 10px;
-    transition: 0.5s;
-    margin: 0;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 1fr;
+header {
+  display: grid;
+  justify-content: space-between;
+  padding: 15px 10px 5px 10px;
+  transition: 0.5s;
+  margin: 0;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 2;
-    background-color: #ffffff77;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #ffffff77;
 }
 
-header:hover{
-    background-color: #ffffffe9;
-    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
--moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+header:hover {
+  background-color: #ffffffe9;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
-#header_logo{
-    display: flex;
-    justify-content: center;
-}
-
-
-header img{
-    width: 10rem;
+#header_logo {
+  display: flex;
+  justify-content: center;
 }
 
-nav ul{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    place-content: center center;
-    padding-left: 0;
-  }
-
-nav{
-    place-self: center;
-    margin-top: 5px;
+header img {
+  width: 10rem;
 }
 
-.scrolled{ /* Classen der tilføjes til header når der scrolles */
-    background-color: #ffffffe9;
-    -webkit-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
--moz-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
-box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  place-content: center center;
+  padding-left: 0;
+}
+
+nav {
+  place-self: center;
+  margin-top: 5px;
+}
+
+.scrolled {
+  /* Classen der tilføjes til header når der scrolles */
+  background-color: #ffffffe9;
+  -webkit-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
 }
 
 /* ---------- Footer :) ---------- */
 footer {
-    margin: 0;
-    padding: 30px 60px 10px 60px;
-    background-color: #0086A8;
-    gap: 50px;
-    line-height: 1.5;
-    justify-content: space-between;
-    grid-area: 1/1;
-  }
-  
-  address {
-    font-style: normal;
-    color: white;
-    margin-bottom: 30px;
-  }
-  
-  footer a {
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-  }
-
-  footer p{
-      color: white;
-      margin: 0;
-  }
-  
-  footer a:hover {
-    text-decoration: underline;
-  }
-  #flinks {
-    margin-bottom: 30px;
-
-  }
-  #fsome {
-    display: flex;
-    gap: 10px;
-    justify-content: start;
-  }
-  #flinks a {
-    max-width: 9%;
-  }
-  
-  hr {
-    color: white;
-  }
-
-  footer img{
-      width: 20px;
-      height: 20px;
-  }
-
-  #grid_logo{
-    display: grid;
+  margin: 0;
+  padding: 30px 60px 10px 60px;
+  background-color: #0086a8;
+  gap: 50px;
+  line-height: 1.5;
+  justify-content: space-between;
+  grid-area: 1/1;
 }
-#footer_logo{
-    display: block;
-    grid-area: 1/1;
-    place-self: end end;
-    margin: 0px 60px 0px 0px;
-    width: 6rem;
-    margin-bottom: 10px;
+
+address {
+  font-style: normal;
+  color: white;
+  margin-bottom: 30px;
+}
+
+footer a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#flinks {
+  margin-bottom: 30px;
+}
+#fsome {
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+#flinks a {
+  max-width: 9%;
+}
+
+hr {
+  color: white;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+}
+
+#grid_logo {
+  display: grid;
+}
+#footer_logo {
+  display: block;
+  grid-area: 1/1;
+  place-self: end end;
+  margin: 0px 60px 0px 0px;
+  width: 6rem;
+  margin-bottom: 10px;
 }
 
 /* #forside_li{
     display: none;
 } */
-  @media (min-width: 800px) {
-
-    #forside_li{
-        display: block;
-    }
-
-    nav{
-        margin-top: 0;
-    }
-
-    footer {
-      display: flex;
-      padding: 30px 60px 10px 60px;
-    }
-
-    #sej_flex{
-        display: flex;
-        gap: 35%;
-    }
-    #fhr{
-    width: 35%;    
-    }
-
-    #footer_logo{
-        width: 8rem;
-    }
-    
-    #fsome {
-        justify-content: end;
-      }
-
-    header{
-        display: flex;
-        padding: 20px 30px 15px 20px;
+@media (min-width: 800px) {
+  #forside_li {
+    display: block;
   }
 
-    header img{
-        width: 8rem;
+  nav {
+    margin-top: 0;
+  }
+
+  footer {
+    display: flex;
+    padding: 30px 60px 10px 60px;
+  }
+
+  #sej_flex {
+    display: flex;
+    gap: 35%;
+  }
+  #fhr {
+    width: 35%;
+  }
+
+  #footer_logo {
+    width: 8rem;
+  }
+
+  #fsome {
+    justify-content: end;
+  }
+
+  header {
+    display: flex;
+    padding: 20px 30px 15px 20px;
+  }
+
+  header img {
+    width: 8rem;
+  }
 }
-  
-  }
 
-  /* ------ HEADER OG FOOTER SLUTTER HER ------- */
+/* ------ HEADER OG FOOTER SLUTTER HER ------- */
 
-  /* Skrifttyper */
+/* Skrifttyper */
 
-  p{
-    font-family: 'Raleway', sans-serif;
-  }
-  address{
-    font-family: 'Raleway', sans-serif;
-  }
-  a{
-    font-family: 'Raleway', sans-serif;
-  }
-  h1{
-    font-family: 'Comfortaa', cursive;
-    font-size: clamp(1.8rem, 3.5vw, 3rem);
-  }
-  h2{
-    font-family: 'Comfortaa', cursive;
-    font-size: clamp(1.3rem, 3vw, 2.5rem);
-  }
-  h5{
-    font-family: 'Comfortaa', cursive;
-    margin: 0;
-    color: white;
-    font-size: 1rem;
-  }
+p {
+  font-family: "Raleway", sans-serif;
+}
+address {
+  font-family: "Raleway", sans-serif;
+}
+a {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-family: "Comfortaa", cursive;
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-size: clamp(1.3rem, 3vw, 2.5rem);
+}
+h5,
+.kontaktinfo {
+  font-family: "Comfortaa", cursive;
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+}
 
-  nav a{
-    font-family: 'Comfortaa', cursive;
-    text-decoration: none;
-    color: black;
-  }
-
+nav a {
+  font-family: "Comfortaa", cursive;
+  text-decoration: none;
+  color: black;
+}
